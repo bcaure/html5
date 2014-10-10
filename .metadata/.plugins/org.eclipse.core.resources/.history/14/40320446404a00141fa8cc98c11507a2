@@ -1,0 +1,57 @@
+package org.agoncal.training.javaee6adv.service;
+
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.ejb.LocalBean;
+import javax.ejb.Stateless;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+
+import org.agoncal.training.javaee6adv.model.Book;
+
+@Stateless
+@LocalBean
+public class BookService extends AbstractService<Book> implements Serializable
+{
+
+   private static final long serialVersionUID = -1L;
+
+@Override
+protected Predicate[] getSearchPredicates(Root<Book> root, Book example) {
+
+    CriteriaBuilder builder = getEntityManager().getCriteriaBuilder();
+    List<Predicate> predicatesList = new ArrayList<Predicate>();
+
+    String title = example.getTitle();
+    if (title != null && !"".equals(title))
+    {
+       predicatesList.add(builder.like(builder.lower(root.<String>get("title")), '%' + title.toLowerCase() + '%'));
+    }
+    String description = example.getDescription();
+    if (description != null && !"".equals(description))
+    {
+       predicatesList.add(builder.like(builder.lower(root.<String>get("description")), '%' + description.toLowerCase() + '%'));
+    }
+    String imageURL = example.getImageURL();
+    if (imageURL != null && !"".equals(imageURL))
+    {
+       predicatesList.add(builder.like(builder.lower(root.<String>get("imageURL")), '%' + imageURL.toLowerCase() + '%'));
+    }
+    String isbn = example.getIsbn();
+    if (isbn != null && !"".equals(isbn))
+    {
+       predicatesList.add(builder.like(builder.lower(root.<String>get("isbn")), '%' + isbn.toLowerCase() + '%'));
+    }
+    Integer nbOfPages = example.getNbOfPages();
+    if (nbOfPages != null && nbOfPages.intValue() != 0)
+    {
+       predicatesList.add(builder.equal(root.get("nbOfPages"), nbOfPages));
+    }
+
+    return predicatesList.toArray(new Predicate[predicatesList.size()]);
+
+}
+}

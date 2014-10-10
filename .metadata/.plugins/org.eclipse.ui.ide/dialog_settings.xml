@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CleanDialogSettings">
+		<item value="490" key="DIALOG_WIDTH"/>
+		<item value="true" key="TOGGLE_SELECTED"/>
+		<item value="374" key="DIALOG_HEIGHT"/>
+		<item value="558" key="DIALOG_X_ORIGIN"/>
+		<item value="190" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="ExternalProjectImportWizard">
+		<item value="false" key="WizardProjectsImportPage.STORE_NESTED_PROJECTS"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_COPY_PROJECT_ID"/>
+		<item value="false" key="WizardProjectsImportPage.STORE_ARCHIVE_SELECTED"/>
+		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="/home/ben/Workspace/html5/cdbookclient"/>
+			<item value="/home/ben/Workspace/html5/cdbookstore"/>
+			<item value="/home/ben/Workspace/websocket"/>
+		</list>
+		<list key="WizardProjectsImportPage.STORE_ARCHIVES">
+			<item value=""/>
+		</list>
+	</section>
+	<section name="WORKBENCH_SETTINGS">
+		<list key="ENABLED_TRANSFERS">
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item value="org.eclipse.jst.ejb.ui.project.facet.EjbProjectWizard" key="NewWizardSelectionPage.STORE_SELECTED_ID"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.jboss.tools.cdi.ui"/>
+			<item value="org.eclipse.jst.ejb.ui"/>
+			<item value="org.eclipse.jst.j2ee.internal"/>
+		</list>
+	</section>
+	<section name="ChooseWorkspaceDialogSettings">
+		<item value="502" key="DIALOG_X_ORIGIN"/>
+		<item value="252" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.dialogs.FilteredResourcesSelectionDialog">
+		<item value="true" key="ShowStatusLine"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;History&gt;&#x0A;&lt;historyRootNode&gt;&#x0A;&lt;infoNode path=&quot;/websocketbackend/src/META-INF/persistence.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/cdbookstore/src/main/resources/META-INF/persistence.xml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/websocket/src/main/webapp/js/contact.js&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/cdbookstore/src/main/webapp/book/view.xhtml&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;infoNode path=&quot;/cdbookstore/src/main/java/org/agoncal/training/javaee6adv/service/CategoryService.java&quot; type=&quot;1&quot;/&gt;&#x0A;&lt;/historyRootNode&gt;&#x0A;&lt;/History&gt;" key="History"/>
+		<item value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#x0A;&lt;workingSet workingSetName=&quot;&quot;/&gt;" key="WorkingSet"/>
+		<item value="false" key="ShowDerived"/>
+		<section name="DialogBoundsSettings">
+			<item value="600" key="DIALOG_WIDTH"/>
+			<item value="1|Sans|9.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+			<item value="500" key="DIALOG_HEIGHT"/>
+			<item value="501" key="DIALOG_X_ORIGIN"/>
+			<item value="105" key="DIALOG_Y_ORIGIN"/>
+		</section>
+	</section>
+</section>

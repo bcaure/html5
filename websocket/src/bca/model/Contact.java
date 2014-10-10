@@ -1,0 +1,107 @@
+package bca.model;
+
+import javax.persistence.EmbeddedId;
+import javax.persistence.Entity;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
+
+@Entity
+@NamedQueries({
+	@NamedQuery(name="Contact.load", query="select c from Contact c")
+})
+public class Contact {
+	@EmbeddedId
+	ContactId id;
+	
+	private String homeNumber;
+	private String cellNumber;
+	private String email;
+	
+	
+	public Contact() {
+		super();
+	}	
+	
+	public Contact(ContactId id) {
+		super();
+		this.id = id;
+	}
+	
+	public String getHomeNumber() {
+		return homeNumber;
+	}
+	public void setHomeNumber(String homeNumber) {
+		this.homeNumber = homeNumber;
+	}
+	public String getCellNumber() {
+		return cellNumber;
+	}
+	public void setCellNumber(String cellNumber) {
+		this.cellNumber = cellNumber;
+	}
+	public String getEmail() {
+		return email;
+	}
+	public void setEmail(String email) {
+		this.email = email;
+	}
+	public ContactId getId() {
+		return id;
+	}
+	public void setId(ContactId id) {
+		this.id = id;
+	}
+	
+	//
+	// These accessors are shortcut for Json conversion
+	//
+	public String getFirstName() {
+		return id.getFirstName();
+	}
+	public void setFirstName(String firstName) {
+		this.id.setFirstName(firstName);
+	}
+	public String getLastName() {
+		return id.getLastName();
+	}
+	public void setLastName(String lastName) {
+		this.id.setLastName(lastName);
+	}
+	
+	/**
+	 * Find out which field to populate from string content
+	 */
+	public Contact setField(String s) {
+		if (s != null && !s.isEmpty()) {
+			if (s.contains("@")) {
+				setEmail(s);
+			} else {
+				String num = s.trim();
+				StringBuffer field = new StringBuffer();
+				String prefixe = "0";
+				if (num.startsWith("+")) {
+					num = num.substring(3);
+					prefixe = num.substring(0, 3)+" ";
+				} else if (num.startsWith("0")) {
+					num = num.substring(1);
+				}
+				if (num.length() == 9) {
+					field.append(num);
+					field.insert(1, '.');
+					field.insert(3, '.');
+					field.insert(5, '.');
+					field.insert(7, '.');
+					field.insert(0, prefixe);
+					if (this.cellNumber==null) {
+						this.setCellNumber(field.toString());
+					} else if (this.cellNumber==null) {
+						this.setCellNumber(field.toString());
+					} else if (this.homeNumber==null) {
+						this.setHomeNumber(field.toString());
+					}
+				}
+			}
+		}
+		return this;
+	}
+}

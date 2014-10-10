@@ -1,0 +1,22 @@
+package org.agoncal.training.javaee6adv.service;
+
+import javax.ejb.Stateless;
+import javax.ejb.LocalBean;
+import javax.persistence.criteria.Predicate;
+import javax.persistence.criteria.Root;
+
+import java.io.Serializable;
+
+@Stateless
+@LocalBean
+public class CDService extends AbstractService implements Serializable
+{
+
+   private static final long serialVersionUID = -1L;
+
+@Override
+protected Predicate[] getSearchPredicates(Root root, Object example) {
+	// TODO Auto-generated method stub
+	return null;
+}
+}

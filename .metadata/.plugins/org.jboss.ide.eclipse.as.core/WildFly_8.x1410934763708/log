@@ -1,0 +1,1489 @@
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-09-17 08:23:28.839
+!MESSAGE Full publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/META-INF/MANIFEST.MF: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/WEB-INF/classes/bca/Contact.class: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/WEB-INF/classes/bca/MessageEncoder.class: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/WEB-INF/classes/bca/WebsocketEndpoint.class: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/WEB-INF/lib/gson-2.2.4.jar: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/WEB-INF/web.xml: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/contacts.html: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/css/bootstrap-theme.css: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/css/bootstrap-theme.css.map: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/css/bootstrap-theme.min.css: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/css/bootstrap.css: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/css/bootstrap.css.map: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/css/bootstrap.min.css: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/js/bootstrap.js: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/js/bootstrap.min.js: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/js/contact.js: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/js/jquery-1.11.1.min.js: Permission non accordée
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-17 08:23:28.840
+!MESSAGE Error copying file /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocket.war/testhtml5.html: Permission non accordée
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-17 08:23:29.478
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-17 08:23:32.271
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-17 08:26:09.739
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-17 08:26:17.978
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-18 19:41:02.435
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-18 19:41:02.557
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-18 19:41:02.607
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-09-18 19:41:02.655
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-18 19:41:06.528
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-20 11:49:57.263
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-20 11:49:57.362
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 11:49:58.098
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 11:50:02.030
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-20 12:29:32.660
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-20 12:29:32.783
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-09-20 12:29:32.839
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 12:29:32.854
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 12:29:36.783
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-20 12:44:10.745
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-20 12:44:10.856
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 12:44:11.003
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 12:44:15.122
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-20 12:49:30.826
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-20 12:49:31.149
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 12:49:31.277
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 12:49:35.216
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-20 12:53:30.711
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 14:46:07.589
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 14:46:11.626
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-20 14:53:41.285
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-20 14:53:41.493
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 14:54:33.417
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 14:54:37.634
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-20 15:52:55.820
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-20 15:52:56.022
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-20 15:52:56.058
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 15:52:56.172
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 16:59:05.236
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 16:59:09.553
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-20 21:30:55.263
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-20 21:30:55.876
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-20 21:31:00.094
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-21 10:43:21.052
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-21 10:43:21.393
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-21 10:43:21.751
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 10:43:22.147
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-21 10:44:40.283
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-21 10:44:40.518
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-21 10:44:40.629
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 10:44:40.647
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-21 10:45:29.902
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-21 10:45:30.025
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 10:45:30.143
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-21 10:45:34.362
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-21 10:49:03.950
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-21 10:49:04.262
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 10:49:04.448
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-21 10:49:08.769
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-21 10:54:20.798
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 10:58:44.563
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-21 10:58:48.711
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-21 11:11:29.809
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 11:11:30.407
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-21 11:11:35.121
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-21 11:13:20.903
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-21 11:13:21.210
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-21 11:13:21.414
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-21 11:13:25.447
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-21 20:02:44.145
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-27 20:54:08.550
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-27 20:54:19.543
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-27 22:17:09.941
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-27 22:17:10.152
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-27 22:17:23.853
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-27 22:17:28.268
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-27 22:17:33.135
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-27 22:17:33.230
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-27 22:25:29.786
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-27 22:25:33.904
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-27 22:33:15.100
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-27 22:36:25.379
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-27 22:36:29.385
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-27 23:22:07.730
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-27 23:22:08.038
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-27 23:26:35.047
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-27 23:26:39.359
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-27 23:37:15.620
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-27 23:53:48.161
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-27 23:53:52.474
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 00:01:59.542
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 00:01:59.767
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 00:01:59.784
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 00:01:59.920
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 00:03:23.400
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 00:03:26.925
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 00:04:00.873
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 00:04:09.819
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 00:04:13.829
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 00:04:44.822
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 00:04:44.933
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 00:04:50.620
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 00:04:54.032
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 00:12:01.739
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 00:12:06.096
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 00:14:12.739
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 00:14:12.857
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 00:14:15.990
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 00:14:19.498
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 08:00:27.366
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 08:00:27.598
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 08:07:49.607
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 08:07:53.436
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 08:10:19.895
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 08:10:20.119
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 08:10:26.543
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 08:10:30.451
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 08:24:45.733
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 08:24:45.947
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 08:24:49.487
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 08:24:53.600
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 09:13:15.607
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:13:59.457
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:14:03.363
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 09:14:26.437
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 09:14:26.503
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:14:31.014
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:14:34.834
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 09:16:48.205
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 09:16:48.418
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:16:51.200
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:16:55.010
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 09:17:40.464
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 09:17:40.565
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:17:43.587
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:17:47.094
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 09:23:03.485
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 09:23:03.564
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:23:07.518
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:23:11.526
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 09:25:46.707
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 0 2014-09-28 09:25:46.711
+!MESSAGE Error occurred while checking module state for websocketear on server WildFly 8.x
+!STACK 0
+org.jboss.ide.eclipse.as.management.core.JBoss7ManangerException: java.io.IOException: java.util.concurrent.CancellationException: XNIO001002: Operation was cancelled
+	at org.jboss.ide.eclipse.as.internal.management.wildfly8.Wildfly8Manager.execute(Wildfly8Manager.java:327)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly8.Wildfly8Manager.getDeploymentNames(Wildfly8Manager.java:381)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly8.Wildfly8Manager.hasDeployment(Wildfly8Manager.java:375)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly8.Wildfly8Manager.getDeploymentStateSafe(Wildfly8Manager.java:204)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly8.Wildfly8ManagerService.getDeploymentState(Wildfly8ManagerService.java:132)
+	at org.jboss.ide.eclipse.as.management.core.JBoss7ManagerServiceProxy.getDeploymentState(JBoss7ManagerServiceProxy.java:67)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getRootModuleState(JBoss7ModuleStateVerifier.java:118)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getRootModuleState(JBoss7ModuleStateVerifier.java:86)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getModuleState(JBoss7ModuleStateVerifier.java:73)
+	at org.jboss.ide.eclipse.as.core.server.internal.v7.JBoss7ModuleStateVerifier.getModuleState(JBoss7ModuleStateVerifier.java:217)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.getModuleState(UpdateModuleStateJob.java:130)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.runWait(UpdateModuleStateJob.java:94)
+	at org.jboss.ide.eclipse.as.core.server.internal.UpdateModuleStateJob.run(UpdateModuleStateJob.java:79)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.IOException: java.util.concurrent.CancellationException: XNIO001002: Operation was cancelled
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:129)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:71)
+	at org.jboss.ide.eclipse.as.internal.management.wildfly8.Wildfly8Manager.execute(Wildfly8Manager.java:316)
+	... 13 more
+Caused by: java.util.concurrent.CancellationException: XNIO001002: Operation was cancelled
+	at org.xnio.AbstractIoFuture.get(AbstractIoFuture.java:170)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel.openChannel(FutureManagementChannel.java:146)
+	at org.jboss.as.protocol.mgmt.ManagementClientChannelStrategy$Establishing.openChannel(ManagementClientChannelStrategy.java:150)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.connectionOpened(FutureManagementChannel.java:215)
+	at org.jboss.as.protocol.ProtocolConnectionManager.connect(ProtocolConnectionManager.java:78)
+	at org.jboss.as.protocol.mgmt.FutureManagementChannel$Establishing.getChannel(FutureManagementChannel.java:204)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient.getOrCreateChannel(RemotingModelControllerClient.java:148)
+	at org.jboss.as.controller.client.impl.RemotingModelControllerClient$1.getChannel(RemotingModelControllerClient.java:67)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:117)
+	at org.jboss.as.protocol.mgmt.ManagementChannelHandler.executeRequest(ManagementChannelHandler.java:92)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeRequest(AbstractModelControllerClient.java:236)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.execute(AbstractModelControllerClient.java:141)
+	at org.jboss.as.controller.client.impl.AbstractModelControllerClient.executeForResult(AbstractModelControllerClient.java:127)
+	... 15 more
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:25:59.802
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:26:03.618
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 09:57:08.681
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 09:57:08.887
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 09:57:11.565
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 09:57:15.574
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 10:10:05.891
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 10:10:06.197
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 10:10:09.670
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 10:10:13.680
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 10:21:13.687
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-09-28 10:38:53.723
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-09-28 10:38:53.723
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket-backend.war/WEB-INF/classes/bca/ContactDeserializeAdapter.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 10:38:53.904
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 10:38:57.917
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 10:40:58.677
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 10:41:03.620
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 10:41:07.633
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 10:57:57.038
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 10:57:57.038
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 11:20:52.698
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 11:20:56.707
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 11:21:03.125
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 11:21:03.257
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 11:24:55.934
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 11:25:00.448
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 15:01:15.177
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 15:01:15.782
+!MESSAGE Server Shutdown Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 16:40:39.854
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 16:40:50.836
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 17:19:59.765
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 17:20:00.001
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 17:20:51.197
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 17:20:55.503
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 17:22:36.880
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 17:22:37.021
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 17:22:45.548
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 17:22:49.253
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 17:29:49.527
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 17:29:49.702
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-09-28 17:29:49.745
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 17:29:49.851
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 17:29:54.080
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 17:36:02.288
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 17:36:02.606
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 17:36:02.853
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 17:36:06.759
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 18:37:53.102
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 18:37:53.318
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-28 18:37:53.379
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 18:37:53.503
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 18:59:40.643
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 18:59:44.956
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-28 19:07:10.106
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-09-28 19:07:10.309
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-28 19:07:10.471
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-28 19:07:14.686
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-29 22:42:03.612
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-29 22:42:03.865
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-09-29 22:42:03.917
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-29 22:42:04.114
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-29 22:42:12.228
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-29 22:44:04.221
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-29 22:48:04.866
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-29 22:48:08.871
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-29 22:49:55.264
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-29 22:49:55.446
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-29 22:50:02.327
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-29 22:50:06.342
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-09-29 22:57:02.959
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-29 22:57:03.269
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-09-29 22:57:03.269
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-29 22:57:03.398
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-29 22:57:08.814
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-09-29 23:41:16.723
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-09-30 19:38:34.866
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-09-30 19:38:39.499
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 11:25:47.498
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 11:25:52.169
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-01 11:25:55.349
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-01 11:25:55.467
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 11:26:11.254
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 11:26:16.276
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-01 14:42:26.305
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 15:56:49.972
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 15:56:54.245
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-01 15:58:15.844
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 15:58:16.512
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 15:58:20.918
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-01 17:10:32.682
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-01 17:10:32.810
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 17:10:57.360
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 17:11:01.675
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-01 17:47:16.107
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-01 17:47:16.511
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 17:49:21.523
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 17:49:27.148
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-01 18:00:05.418
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 18:00:06.079
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 18:00:10.005
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-01 18:06:57.191
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-01 18:06:57.417
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 18:06:57.650
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 18:07:01.756
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-01 18:10:14.467
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-01 18:10:14.687
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-01 18:10:14.847
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-01 18:10:19.479
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-01 18:23:37.890
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 09:34:06.347
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 09:34:17.873
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 09:37:59.037
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 09:37:59.257
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 09:37:59.408
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 09:38:03.420
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 09:39:23.217
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 09:40:34.220
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 09:40:39.070
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 09:40:45.257
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 09:40:45.465
+!MESSAGE Server Shutdown Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 14:49:16.040
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 14:49:19.903
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 15:06:36.696
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:06:37.341
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:06:41.656
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 15:27:32.295
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:31:35.283
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:31:40.608
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 15:32:57.245
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:33:03.537
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:33:07.743
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 15:34:01.784
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 15:34:01.988
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:34:07.409
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:34:11.535
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 15:41:14.773
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:46:28.845
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:46:33.259
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 15:47:13.735
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 15:47:13.943
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:47:21.078
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:47:25.192
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 15:48:09.752
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 15:49:02.119
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 15:49:06.032
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 16:00:57.162
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 16:01:13.273
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 16:01:18.100
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 16:02:24.665
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 16:02:29.114
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 16:02:33.524
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 16:04:23.850
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 16:11:10.769
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 16:11:14.776
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 16:26:36.761
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 16:36:35.775
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 16:36:39.886
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 16:44:50.963
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 16:44:51.188
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 16:57:51.383
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 16:57:55.196
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 16:58:37.295
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 16:58:37.482
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 16:58:37.623
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 16:58:41.531
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 17:03:43.327
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 17:03:43.423
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-10-02 17:03:43.441
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 17:03:43.557
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 17:03:47.463
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 17:32:20.991
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 17:32:21.314
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 17:32:21.369
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 17:32:21.442
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 17:33:26.380
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 17:33:30.498
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-02 17:40:13.393
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-02 17:40:13.817
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 17:40:18.694
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 17:40:22.802
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 18:04:19.876
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 18:06:30.347
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 18:06:34.679
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-02 18:08:14.450
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-02 18:24:46.826
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-02 18:24:50.836
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 09:29:57.158
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-03 09:29:57.466
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 09:29:57.710
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 09:29:58.152
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 09:35:41.105
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 09:35:45.412
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 09:37:29.747
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 09:37:29.943
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 2 16842768 2014-10-03 09:37:29.955
+!MESSAGE Poll Thread Aborted: null
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 09:37:30.071
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 09:37:34.186
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 09:42:36.489
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 09:42:49.287
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 09:42:53.110
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 09:48:04.717
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 09:49:50.743
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 09:49:54.748
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 09:51:39.849
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 09:51:40.771
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 09:51:44.886
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 10:00:03.453
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 10:00:04.053
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 10:00:07.961
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 11:01:55.510
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 11:03:54.868
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 11:03:58.681
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 11:05:11.520
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 11:05:11.692
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 11:05:17.735
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 11:05:21.542
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 11:32:48.635
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-03 11:32:48.748
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 11:32:48.867
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 11:32:52.772
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 11:38:07.522
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 11:39:06.502
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 11:39:10.317
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 11:57:57.443
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 11:59:44.475
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 11:59:48.983
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 14:15:29.590
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 14:15:52.458
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 14:15:56.573
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 14:22:55.114
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 14:24:53.471
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 14:24:57.891
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 14:32:44.149
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 14:33:59.020
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 14:34:03.133
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 14:36:45.669
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 14:36:49.972
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 14:36:54.076
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 15:01:39.236
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-03 15:01:39.561
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 15:01:39.672
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 15:01:43.577
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 15:01:59.374
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 15:01:59.611
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 15:01:59.659
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 15:02:03.875
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 15:04:46.410
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-03 15:04:46.712
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 15:04:46.754
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 15:04:46.836
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 15:05:49.958
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 15:05:54.074
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 15:51:58.987
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 15:51:59.220
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 15:59:21.151
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 15:59:25.056
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-03 16:08:15.011
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-03 16:08:15.426
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-03 16:09:19.972
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-03 16:09:23.977
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-03 16:26:31.534
+!MESSAGE Server processes have been terminated.
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-05 22:59:57.677
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-05 23:00:08.607
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-05 23:13:17.164
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-05 23:13:17.599
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.wtp.core 1 16973825 2014-10-05 23:13:17.691
+!MESSAGE Server processes have been terminated.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-05 23:13:17.832
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-05 23:22:23.259
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-05 23:22:28.203
+!MESSAGE Server Startup Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-07 15:02:46.238
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-07 15:02:57.343
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-07 17:14:18.782
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-07 17:14:19.029
+!MESSAGE Server Shutdown Succeeded
+!SESSION 
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-09 18:46:15.211
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-09 18:46:26.280
+!MESSAGE Server Startup Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:47:50.089
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:47:50.089
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:47:50.089
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:47:50.089
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:47:50.089
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:47:50.089
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:48:25.356
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:25.356
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:25.356
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:25.356
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:25.356
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:25.356
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:48:58.071
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:58.071
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:58.071
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:58.071
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:58.071
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:48:58.071
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:49:12.061
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:12.061
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:12.061
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:12.061
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:12.061
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:12.062
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:49:23.244
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:23.244
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:23.244
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:23.244
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:23.244
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:23.244
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:49:38.967
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:38.967
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:38.967
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:38.967
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:38.967
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:38.967
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:49:57.034
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:57.034
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:57.034
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:57.034
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:57.034
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:49:57.034
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:52:25.436
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:25.436
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:25.436
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:25.436
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:25.436
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:25.436
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:52:26.469
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:26.469
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:26.470
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:26.470
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:26.470
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:52:26.470
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:53:07.657
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:07.657
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:07.657
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:07.657
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:07.657
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:07.657
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 4 1644298244 2014-10-09 18:53:52.405
+!MESSAGE Incremental publish failed for module websocket
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:52.406
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:52.406
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ContactListEncoder.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:52.406
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/ImportContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:52.406
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/LoadContactEndpoint.class. May be locked by another process.
+!SUBENTRY 1 org.jboss.ide.eclipse.as.wtp.core 4 1644298251 2014-10-09 18:53:52.406
+!MESSAGE Could not delete /usr/share/wildfly-8.1.0.Final/standalone/deployments/websocketear.ear/websocket.war/WEB-INF/classes/bca/PushContactEndpoint.class. May be locked by another process.
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842776 2014-10-09 18:55:05.164
+!MESSAGE Server shutting down
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842785 2014-10-09 18:55:05.393
+!MESSAGE Server Shutdown Succeeded
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842760 2014-10-09 18:55:05.447
+!MESSAGE Server Starting
+
+!ENTRY org.jboss.ide.eclipse.as.core 1 16842769 2014-10-09 18:55:10.475
+!MESSAGE Server Startup Succeeded

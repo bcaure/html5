@@ -1,0 +1,32 @@
+package bca;
+
+import java.util.Hashtable;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class ServiceHelper {
+	
+	static Context context;    		
+	static {
+		final Hashtable<String, String> jndiProperties = new Hashtable<>();
+		jndiProperties.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+		try {
+			context = new InitialContext(jndiProperties);
+		} catch (NamingException e) {
+			context = null;
+		} 
+	}
+
+	
+    public static ContactService getContactServiceImpl() throws NamingException {
+		ContactService service =  (ContactService) context.lookup("java:global/websocketear/websocketbackend/ContactService!bca.ContactService");
+		return service;
+    }
+    public static FileImportService getFileImportServiceImpl() throws NamingException {
+    	FileImportService service =  (FileImportService) context.lookup("java:global/websocketear/websocketbackend/FileImportService!bca.FileImportService");
+		return service;
+    	
+    }
+}

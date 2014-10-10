@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workingSetManager>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411896524481_1" label="jee7-sample" name="jee7-sample">
+<item elementID="=jee7-ejb" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jee7-ear" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/jee7" type="4"/>
+<item elementID="=jee7-web" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411896546893_2" label="websocket-poc" name="websocket-poc">
+<item elementID="=websocketbackend" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=websocket" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/websocketear" type="4"/>
+<item factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/websocketparent" type="4"/>
+</workingSet>
+<workingSet editPageId="org.eclipse.jdt.ui.JavaWorkingSetPage" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1412156197223_4" label="formation" name="formation">
+<item elementID="=cdbookclient" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+<item elementID="=cdbookstore" factoryID="org.eclipse.jdt.ui.PersistableJavaElementFactory"/>
+</workingSet>
+<workingSet aggregate="true" factoryID="org.eclipse.ui.internal.WorkingSetFactory" id="1411206833904_0" label="Window Working Set" name="Aggregate for window 1411206833903"/>
+</workingSetManager>

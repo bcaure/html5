@@ -1,0 +1,60 @@
+package bca;
+import java.io.IOException;
+import java.io.StringReader;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.logging.Logger;
+
+import javax.json.Json;
+import javax.json.stream.JsonParser;
+import javax.naming.NamingException;
+import javax.websocket.EncodeException;
+import javax.websocket.OnMessage;
+import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
+
+@ServerEndpoint(
+	value = "/load-contact"
+	//,encoders = { ContactEncoder.class } 
+)
+public class LoadContactEndpoint {
+	
+	private static final Logger LOGGER = Logger.getLogger(PushContactEndpoint.class.getName());
+	private static final Set<Session> SESSIONS = Collections.synchronizedSet(new HashSet<Session>());
+	
+    @OnMessage 
+    public void handleMessage(final Session session, String data) throws IOException, EncodeException, NamingException{
+    	
+    	List<Contact> resultList = null;
+    	
+    	SESSIONS.add(session);
+    	
+    	LOGGER.info("Message :"+data);
+    	JsonParser parser = Json.createParser(new StringReader(data));
+    	Map<String, Integer> params =  new HashMap<>();
+    	String key = null;
+    	while (parser.hasNext()) {
+    	   JsonParser.Event event = parser.next();
+    	   switch(event) {
+    	      case KEY_NAME: key = parser.getString(); break;
+    	      case VALUE_NUMBER: params.put(key, parser.getInt()); break;
+    	      default:
+    	   }
+    	}
+    	
+    	
+		resultList = ServiceHelper.getContactServiceImpl().load(params.get("start"), params.get("max"));
+	    	
+    	
+    	session.getBasicRemote().sendObject(resultList);
+
+    	
+    	LOGGER.info("End");
+  	
+    }
+    
+}

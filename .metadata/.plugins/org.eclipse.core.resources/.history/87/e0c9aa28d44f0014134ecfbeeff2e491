@@ -1,0 +1,9 @@
+package bca;
+
+import javax.enterprise.inject.Produces;
+
+public class Constants {
+	@FileImport
+	@Produces 
+	String filePath = "/tmp";
+}

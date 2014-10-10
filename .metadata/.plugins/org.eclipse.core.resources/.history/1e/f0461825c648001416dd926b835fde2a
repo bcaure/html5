@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <title>Carnet de contacts</title>
+  </head>
+  <body>
+ 
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/contact.js"></script>    
+    
+    <div id="mainDiv" class="container">
+    
+      <div class="page-header"><h1>Carnet de contacts</h1></div>
+
+      <div class="row">
+        <div class="col-lg-1">
+          <button id="addButton" type="button" onclick="showContact()" class="btn btn-lg btn-info">Add</button>
+        </div>
+        <div class="col-lg-2">
+          <input type="file" id="input" onchange="importContact(this.files)">
+        </div>
+      </div> 
+
+      <div class="row"><div class="col-lg-12">&nbsp;</div></div>
+      <div id="mainContentDiv" class="row">
+        <div id="contactTemplate" class="contact col-lg-3" onclick="showContact(this)">
+          <div class="id" style="display:none"></div>
+          <div class="panel panel-info">
+            <div class="panel-heading clickable">
+              <h3 class="panel-title"><span class="firstName">Jean-Michel</span>&nbsp;<span class="lastName">Template</span></h3>       
+            </div>
+            <div class="panel-body">          
+              <span class="homeNumber label label-success">000000011220022</span>
+              <span class="cellNumber label label-success">0011220022</span>
+              <span class="email label label-info">jeanmichel@michelsamere.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div id="form" style="display: none; position: absolute; top:200px; text-align:center;">
+         <input id="id" class="id" type="hidden" name="contactForm" />
+         <div class="panel panel-warning" style="width: 900px; height:300px">
+           <div class="panel-heading"><h3 class="panel-title">Contact form</h3></div>
+           <div class="panel-body">
+             <div class="row"><div class="col-lg-12">&nbsp;</div></div>
+             <div class="row">
+               <div class="col-lg-2">First name:</div>
+               <div class="col-lg-3"><input id="firstName" name="contactForm" class="firstName"></div>
+               <div class="col-lg-2">Last name:</div>
+               <div class="col-lg-3"><input id="lastName" name="contactForm" class="lastName"></div>
+             </div>
+             <div class="row"><div class="col-lg-12">&nbsp;</div></div>
+             <div class="row">
+               <div class="col-lg-2">Home number:</div>
+               <div class="col-lg-3"><input id="homeNumber" name="contactForm" class="homeNumber"></div>
+               <div class="col-lg-2">Cell number: </div>
+               <div class="col-lg-3"><input id="cellNumber" name="contactForm" class="cellNumber"></div>
+             </div>
+             <div class="row"><div class="col-lg-12">&nbsp;</div></div>
+             <div class="row">
+               <div class="col-lg-2">Email address:</div>
+               <div class="col-lg-3"><input id="email" name="contactForm" class="email"></div>
+             </div>
+             <div class="row"><div class="col-lg-12">&nbsp;</div></div>
+             <div class="row">
+               <div class="col-lg-3"><button type="button" onclick="add(this)" class="btn btn-lg btn-default">Cancel</button>
+               <button type="button" onclick="add(this)" class="btn btn-lg btn-success">OK</button></div>
+             </div>
+           </div>
+         </div>
+      </div>   
+         
+    </div>
+  </body>
+
+  
+
+  <script>
+
+  init();
+  
+  </script>
+  
+  <style>
+  	#contactTemplate { display: none;}
+	.clickable { cursor: pointer; }
+	.clickable:hover { background-color:#ccf8ff; }
+  
+  </style>
+</html>
+

@@ -1,0 +1,42 @@
+package bca;
+import java.io.IOException;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.logging.Logger;
+
+import javax.inject.Inject;
+import javax.inject.Named;
+import javax.naming.NamingException;
+import javax.websocket.EncodeException;
+import javax.websocket.OnMessage;
+import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
+
+@Named
+@ServerEndpoint(
+        value = "/import-contact",
+        encoders = { ContactEncoder.class }
+)
+public class ImportContactEndpoint{
+	
+	private static final Logger LOGGER = Logger.getLogger(ImportContactEndpoint.class.getName());
+	private static final Set<Session> SESSIONS = Collections.synchronizedSet(new HashSet<Session>());
+	
+	@Inject @FileImport 
+	String filePath;
+
+    @OnMessage 
+    public void handleMessage(final Session session, String s) throws IOException, EncodeException, NamingException{
+    	SESSIONS.add(session);
+    	
+    	LOGGER.info("Message :"+s);
+    	Collection<Contact> contacts = ServiceHelper.getFileImportServiceImpl().importCsv(s);	    	
+    	
+    	session.getBasicRemote().sendObject(contacts);
+    	
+    	LOGGER.info("End");
+  	
+    }
+}

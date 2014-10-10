@@ -1,0 +1,77 @@
+package bca;
+import java.io.IOException;
+import java.io.Reader;
+import java.io.StringReader;
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.HashMap;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.logging.Logger;
+
+import javax.inject.Inject;
+import javax.naming.NamingException;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+import javax.transaction.Transactional;
+import javax.websocket.EncodeException;
+import javax.websocket.OnMessage;
+import javax.websocket.Session;
+import javax.websocket.server.ServerEndpoint;
+
+import org.apache.commons.csv.CSVFormat;
+import org.apache.commons.csv.CSVRecord;
+
+@ServerEndpoint(
+        value = "/import-contact",
+        encoders = { ContactEncoder.class }
+)
+@Transactional
+public class ImportContactEndpoint{
+	
+	private static final Logger LOGGER = Logger.getLogger(ImportContactEndpoint.class.getName());
+	private static final Set<Session> SESSIONS = Collections.synchronizedSet(new HashSet<Session>());
+	
+	@Inject @FileImport 
+	String filePath;
+
+	@PersistenceContext(unitName="websocketbackend")
+    private EntityManager em;
+	
+    @OnMessage 
+    public void handleMessage(final Session session, String s) throws IOException, EncodeException, NamingException{
+    	SESSIONS.add(session);
+    	
+    	LOGGER.info("Message :"+s);
+    	Collection<Contact> contacts = importCsv(s);	    	
+    	
+    	session.getBasicRemote().sendObject(contacts);
+    	
+    	LOGGER.info("End");
+  	
+    }
+    
+	public Collection<Contact> importCsv(String fileContent) throws IOException {
+		Reader in = new StringReader(fileContent);
+		List<CSVRecord> records = makeCollection((CSVFormat.EXCEL.parse(in)));
+		Map<ContactId, Contact> contacts = new HashMap<>();
+		records.stream()
+			.filter(record -> !contacts.containsKey(new ContactId(record.get("First"), record.get("Last"))))
+			   .map(record -> contacts.put(new ContactId(record.get("First"), record.get("Last")), new Contact(new ContactId(record.get("First"), record.get("Last")))));
+		records.stream()
+					.map(record -> contacts.get(new ContactId(record.get("First"), record.get("Last"))).setField(record.get("value")))
+					.map(contact -> em.merge(contact));
+		return contacts.values();
+	}
+	public static <E> List<E> makeCollection(Iterable<E> iter) {
+	    List<E> list = new ArrayList<E>();
+	    for (E item : iter) {
+	        list.add(item);
+	    }
+	    return list;
+	}
+    
+}

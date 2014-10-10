@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+								xmlns:h="http://java.sun.com/jsf/html"
+								xmlns:f="http://java.sun.com/jsf/core"
+								xmlns:ui="http://java.sun.com/jsf/facelets"
+								template="/resources/scaffold/mainTemplate.xhtml">
+
+	<f:metadata>
+		<f:viewParam name="id" value='#{CDBean.id}'/>
+		<f:event type="preRenderView" listener='#{CDBean.retrieve}'/>
+	</f:metadata>
+
+	<ui:param name="pageTitle" value="View Book"/>
+
+	<ui:define name="header">
+		CD
+	</ui:define>
+
+	<ui:define name="navigation">
+		<ui:include src="navigation.xhtml"/>
+	</ui:define>
+      if (title != null && !title.trim().isEmpty())
+         result += "title: " + title;
+      if (price != null)
+         result += ", price: " + price;
+      if (description != null && !description.trim().isEmpty())
+         result += ", description: " + description;
+      if (imageURL != null && !imageURL.trim().isEmpty())
+         result += ", imageURL: " + imageURL;
+      if (totalDuration != null)
+         result += ", totalDuration: " + totalDuration;
+	<ui:define name="main">
+		<h:panelGrid columnClasses="label,component,required" columns="3">
+			<h:outputLabel for="cdBeanCDTitle" value="Title:"/>
+			<h:outputText id="cdBeanCDTitle" value="#{CDBean.CD.title}"/>
+			<h:outputText/>
+			<h:outputLabel/>
+			<h:graphicImage id="cdBeanCDImageURL" url="#{CDBean.CD.imageURL}" width="128"/>
+			<h:outputText/>
+			<h:outputLabel for="cdBeanCDPrice" value="Price:"/>
+			<h:outputText id="cdBeanCDPrice" value="#{CDBean.CD.price}"/>
+			<h:outputText/>
+			<h:outputLabel for="cdBeanCDDescription" value="Description:"/>
+			<h:outputText id="cdBeanCDDescription" value="#{CDBean.CD.description}"/>
+			<h:outputText/>
+			<h:outputLabel for="cdBeanCDIsbn" value="Isbn:"/>
+			<h:outputText id="cdBeanCDIsbn" value="#{CDBean.CD.isbn}"/>
+			<h:outputText/>
+			<h:outputLabel for="cdBeanCDNbOfPages" value="Duration (mn):"/>
+			<h:outputText id="cdBeanCDNbOfPages" value="#{CDBean.CD.totalDuration}"/>
+			<h:outputText/>
+			<h:outputLabel for="cdBeanCDPublicationDate" value="Publication Date:"/>
+			<h:outputText id="cdBeanCDPublicationDate" value="#{CDBean.CD.publicationDate}">
+				<f:convertDateTime type="date"/>
+			</h:outputText>
+		</h:panelGrid>
+	</ui:define>
+
+</ui:composition>

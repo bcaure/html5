@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Layout resource="/websocket/src/META-INF/beans.xml">
+ <TreeFormPage>
+  <Memento type="CDIClass">
+   <Memento collapsed="false" type="Class"/>
+  </Memento>
+  <Memento type="CDIInterceptors">
+   <Memento collapsed="false" type="Interceptors"/>
+  </Memento>
+  <Memento type="FileCDIBeans">
+   <Memento collapsed="false" type="CDI Beans 1.0 File"/>
+  </Memento>
+ </TreeFormPage>
+</Layout>

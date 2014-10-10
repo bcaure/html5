@@ -1,0 +1,5 @@
+package org.agoncal.training.javaee6adv.util;
+
+public class ResourceProducer
+{
+}

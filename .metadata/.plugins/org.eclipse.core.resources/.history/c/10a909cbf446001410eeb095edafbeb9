@@ -1,0 +1,46 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>bca</groupId>
+  <artifactId>websocketear</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <packaging>ear</packaging>
+  <name>websocketear</name>
+
+   <parent>
+       <artifactId>websocketparent</artifactId>
+       <groupId>bca</groupId>
+       <version>0.0.1-SNAPSHOT</version>
+   </parent>
+
+	<repositories>
+	        <repository>
+	            <id>JBoss Repository</id>
+	            <url>https://repository.jboss.org/nexus/content/groups/public/</url>
+	        </repository>
+	</repositories>
+  <dependencies>
+
+      <!-- Depend on the ejb module and war so that we can package them -->
+      <dependency>
+          <groupId>bca</groupId>
+          <artifactId>jee7-web</artifactId>
+          <type>war</type>
+      </dependency>
+      <dependency>
+          <groupId>bca</groupId>
+          <artifactId>jee7-ejb</artifactId>
+          <type>ejb</type>
+      </dependency>
+    
+  </dependencies>	
+  <build>
+     <plugins>
+           
+         <plugin>
+             <groupId>org.wildfly.plugins</groupId>
+             <artifactId>wildfly-maven-plugin</artifactId>
+             <version>1.0.0.Beta1</version>
+         </plugin>
+     </plugins>
+  </build>
+</project>

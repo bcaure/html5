@@ -1,0 +1,87 @@
+package org.agoncal.training.javaee6adv.view;
+
+import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertNotNull;
+import static org.junit.Assert.assertNull;
+import static org.junit.Assert.assertTrue;
+
+import javax.inject.Inject;
+
+import org.agoncal.training.javaee6adv.model.Author;
+import org.agoncal.training.javaee6adv.service.AbstractService;
+import org.agoncal.training.javaee6adv.service.AuthorService;
+import org.agoncal.training.javaee6adv.util.ResourceProducer;
+import org.jboss.arquillian.container.test.api.Deployment;
+import org.jboss.arquillian.junit.Arquillian;
+import org.jboss.shrinkwrap.api.ShrinkWrap;
+import org.jboss.shrinkwrap.api.asset.EmptyAsset;
+import org.jboss.shrinkwrap.api.spec.JavaArchive;
+import org.junit.Assert;
+import org.junit.Test;
+import org.junit.runner.RunWith;
+
+@RunWith(Arquillian.class)
+public class AuthorBeanTest
+{
+
+   @Inject
+   private AuthorBean authorbean;
+
+   @Deployment
+   public static JavaArchive createDeployment()
+   {
+      return ShrinkWrap.create(JavaArchive.class)
+            .addPackage(AuthorBean.class.getPackage())
+            .addPackage(Author.class.getPackage())
+                        .addClass(ResourceProducer.class)
+            .addPackage(AuthorService.class.getPackage())
+            .addPackage(AbstractService.class.getPackage())
+            .addAsManifestResource("META-INF/persistence.xml", "persistence.xml")
+            .addAsManifestResource(EmptyAsset.INSTANCE, "beans.xml");
+   }
+
+   @Test
+   public void should_be_deployed()
+   {
+      Assert.assertNotNull(authorbean);
+   }
+
+   @Test
+   public void should_crud()
+   {
+      // Creates an object
+      Author author = new Author();
+      author.setFirstName("Dummy value");
+      author.setLastName("Dummy value");
+
+      // Inserts the object into the database
+      authorbean.setAuthor(author);
+      authorbean.create();
+      authorbean.update();
+      author = authorbean.getAuthor();
+      assertNotNull(author.getId());
+
+      // Finds the object from the database and checks it's the right one
+      author = authorbean.findById(author.getId());
+      assertEquals("Dummy value", author.getFirstName());
+
+      // Deletes the object from the database and checks it's not there anymore
+      authorbean.setId(author.getId());
+      authorbean.create();
+      authorbean.delete();
+      authorbean.retrieve();
+      assertNull(authorbean.getAuthor());
+   }
+
+   @Test
+   public void should_paginate()
+   {
+      // Creates an empty example
+      Author example = new Author();
+
+      // Paginates through the example
+      authorbean.setExample(example);
+      authorbean.paginate();
+      assertTrue((authorbean.getPageItems().size() == authorbean.getPageSize()) || (authorbean.getPageItems().size() == authorbean.getCount()));
+   }
+}

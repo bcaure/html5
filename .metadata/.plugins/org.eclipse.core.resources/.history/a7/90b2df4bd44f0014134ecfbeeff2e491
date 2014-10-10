@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="websocketbackend">
+<!-- 		<properties>
+			<property name="hibernate.connection.username" value="ben"/>
+			<property name="hibernate.connection.password" value="azeqsd11"/>
+			<property name="hibernate.connection.url" value="jdbc:derby:/home/ben/DerbyDatabase/contactDb;create=true;DATABASE_TO_UPPER=false"/>
+			<property name="hibernate.connection.driver_class" value="org.apache.derby.jdbc.EmbeddedDriver"/>
+		</properties>
+ -->	
+    <properties>
+      <property name="hibernate.connection.url" value="jdbc:h2:mem:contact;create=true;DATABASE_TO_UPPER=false;DB_CLOSE_DELAY=-1"/>
+      <property name="hibernate.connection.driver_class" value="org.h2.Driver"/>
+      <property name="hibernate.hbm2ddl.auto" value="update" />
+      <property name="hibernate.show_sql" value = "true" />
+      <property name="hibernate.dialect" value="org.hibernate.dialect.H2Dialect"/>
+      
+    </properties>
+ 
+ </persistence-unit>
+</persistence>

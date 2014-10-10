@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+<fullyQualifiedTypeName name="javax.persistence.Query"/>
+<fullyQualifiedTypeName name="com.sun.istack.internal.logging.Logger"/>
+<fullyQualifiedTypeName name="com.google.gson.Gson"/>
+<fullyQualifiedTypeName name="javax.json.stream.JsonParser"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="javax.naming.Context"/>
+<fullyQualifiedTypeName name="java.util.Hashtable"/>
+<fullyQualifiedTypeName name="bca.ContactDeserializeAdapter"/>
+<fullyQualifiedTypeName name="bca.LoadContactEndpoint"/>
+<fullyQualifiedTypeName name="javax.persistence.Table"/>
+<fullyQualifiedTypeName name="javax.ejb.Singleton"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.lang.reflect.Type"/>
+<fullyQualifiedTypeName name="bca.LoadDatabaseSingleton"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.model.Book"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.model.MajorLabel"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.service.AbstractService"/>
+<fullyQualifiedTypeName name="java.util.logging.Level"/>
+<fullyQualifiedTypeName name="java.lang.annotation.ElementType"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceUnits"/>
+<fullyQualifiedTypeName name="javax.persistence.PersistenceContext"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.Produces"/>
+<fullyQualifiedTypeName name="org.jboss.resteasy.logging.Logger"/>
+<fullyQualifiedTypeName name="org.jboss.arquillian.core.spi.InjectionPoint"/>
+<fullyQualifiedTypeName name="javax.enterprise.inject.spi.InjectionPoint"/>
+<fullyQualifiedTypeName name="java.util.logging.Logger"/>
+<fullyQualifiedTypeName name="javax.annotation.PostConstruct"/>
+<fullyQualifiedTypeName name="javax.enterprise.context.RequestScoped"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.model.Category"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.model.CD"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.util.ResourceProducer"/>
+<fullyQualifiedTypeName name="javax.faces.application.FacesMessage"/>
+<fullyQualifiedTypeName name="javax.enterprise.event.Event"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.model.Item"/>
+<fullyQualifiedTypeName name="javax.enterprise.event.Observes"/>
+<fullyQualifiedTypeName name="org.agoncal.training.javaee6adv.model.PurchaseOrder"/>
+<fullyQualifiedTypeName name="javax.inject.Inject"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+</qualifiedTypeNameHistroy>

@@ -1,0 +1,18 @@
+package bca;
+
+import java.util.Hashtable;
+
+import javax.naming.Context;
+import javax.naming.InitialContext;
+import javax.naming.NamingException;
+
+public class ServiceHelper {
+    public static ContactService getContactServiceImpl() throws NamingException {
+		final Hashtable<String, String> jndiProperties = new Hashtable<>();
+		jndiProperties.put(Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
+		final Context context = new InitialContext(jndiProperties);    		
+		ContactService contactService =  (ContactService) context.lookup("java:global/websocketear/websocketbackend/ContactService!bca.ContactService");
+		return contactService;
+    	
+    }
+}

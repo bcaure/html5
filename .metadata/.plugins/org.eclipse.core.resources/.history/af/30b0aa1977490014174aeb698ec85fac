@@ -1,0 +1,47 @@
+package bca;
+
+import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.List;
+
+import javax.annotation.PostConstruct;
+import javax.ejb.Singleton;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+import com.google.gson.Gson;
+import com.google.gson.reflect.TypeToken;
+
+@Singleton
+
+public class LoadDatabaseSingleton {
+	
+
+    @PersistenceContext(unitName="websocketbackend")
+    private EntityManager em;	
+	
+    public void invokeMe() {
+    	// Do nothing, let's do post construct
+    	
+    }
+    
+	@PostConstruct
+	public void loadDatabase() {
+		String json = 
+		  "["+
+           "{ \"firstName\":\"Bernadette\", \"lastName\":\"Durand\", \"homeNumber\":\"04.56.47.45.65\", \"cellNumber\":\"06.12.33.45.99\", \"email\":\"bdurand@outlook.com\"},"+
+           "{ \"firstName\":\"Ginette\", \"lastName\":\"Dumont\", \"homeNumber\":\"04.12.36.11.11\", \"cellNumber\":\"06.43.90.78.10\", \"email\":\"gdumont@gmail.com\"},"+
+           "{ \"firstName\":\"Alain\", \"lastName\":\"Dupontel\", \"homeNumber\":\"05.12.34.11.88\", \"cellNumber\":\"06.78.44.68.22\", \"email\":\"alain.dupontel@gmail.com\"},"+
+           "{ \"firstName\":\"Paul\", \"lastName\":\"Pole\", \"homeNumber\":\"05.11.34.11.88\", \"cellNumber\":\"06.78.44.68.22\", \"email\":\"pile.poele@gmail.com\"},"+
+           "{ \"firstName\":\"Alain\", \"lastName\":\"Dupontel\", \"homeNumber\":\"05.12.34.11.88\", \"cellNumber\":\"06.78.44.68.22\", \"email\":\"toutoune@gmail.com\"},"+
+           "{ \"firstName\":\"Josie\", \"lastName\":\"Gonzales\", \"homeNumber\":\"05.12.34.11.88\", \"cellNumber\":\"06.78.44.68.22\", \"email\":\"totopprout@gmail.com\"},"+
+           "{ \"firstName\":\"Alain\", \"lastName\":\"Dumont\", \"homeNumber\":\"05.12.34.11.88\", \"cellNumber\":\"06.78.44.68.22\", \"email\":\"alain.dumont@aol.com\"},"+
+           "{ \"firstName\":\"Barnab\u00E9\", \"lastName\":\"De la Vega\", \"homeNumber\":\"05.12.34.11.88\", \"cellNumber\":\"06.78.44.68.22\", \"email\":\"kikoo@lol.com\"}"+
+		  "]";
+		Type listType = new TypeToken<ArrayList<Contact>>() {}.getType();
+		List<Contact> objects = new Gson().fromJson(json, listType);
+		for (Contact contact:objects) {
+			em.merge(contact);
+		}
+	}
+}

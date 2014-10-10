@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="jee7-ejb"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="/home/ben/.m2/repository/org/jboss/spec/javax/faces/jboss-jsf-api_2.2_spec/2.2.5/jboss-jsf-api_2.2_spec-2.2.5.jar"/>
+  <path value="/home/ben/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="/home/ben/.m2/repository/org/hibernate/hibernate-validator/5.0.3.Final/hibernate-validator-5.0.3.Final.jar"/>
+  <path value="/jee7-web/src/main/webapp/WEB-INF/faces-config.xml">
+   <libraries>
+    <library class="faces-config">
+     <id class="model-object"
+      path="FileSystems/WEB-INF/faces-config.xml" project="jee7-web"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/home/ben/.m2/repository/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar"/>
+  <path value="/home/ben/.m2/repository/org/jboss/logging/jboss-logging/3.1.1.GA/jboss-logging-3.1.1.GA.jar"/>
+  <path value="/home/ben/.m2/repository/javax/validation/validation-api/1.1.0.Final/validation-api-1.1.0.Final.jar"/>
+  <path value="/home/ben/.m2/repository/com/fasterxml/classmate/1.0.0/classmate-1.0.0.jar"/>
+  <path value="/home/ben/.m2/repository/org/jboss/resteasy/jaxrs-api/3.0.6.Final/jaxrs-api-3.0.6.Final.jar"/>
+  <path value="/home/ben/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%1;%2;" path="%0"/>
+   <linked-resource name="%1;%4;%5;" path="%3"/>
+   <linked-resource declaration="true" name="%6;%7;" path="%4"/>
+   <linked-resource name="%4;" path="%8"/>
+   <linked-resource name="%1;%0;%5;%3;" path="%9"/>
+   <linked-resource declaration="true" name="%10;" path="%2"/>
+  </core>
+  <el>
+   <linked-el length="37" name="%11" offset="3578" path="%12"/>
+   <linked-el length="51" name="%11" offset="3394" path="%12"/>
+   <linked-el length="21" name="%13" offset="3643" path="%14"/>
+   <linked-el length="21" name="%15" offset="3643" path="%14"/>
+   <linked-el length="17" name="%16" offset="1077" path="%17"/>
+   <linked-el length="21" name="%18" offset="3790" path="%14"/>
+   <linked-el length="20" name="%6" offset="1838" path="%12"/>
+   <linked-el length="20" name="%6" offset="1659" path="%12"/>
+   <linked-el length="26" name="%6" offset="2032" path="%12"/>
+   <linked-el length="21" name="%19" offset="3790" path="%14"/>
+   <linked-el length="21" name="%20" offset="3790" path="%14"/>
+   <linked-el length="20" name="%4" offset="1838" path="%12"/>
+   <linked-el length="31" name="%4" offset="2254" path="%12"/>
+   <linked-el length="20" name="%4" offset="1659" path="%12"/>
+   <linked-el length="26" name="%4" offset="2032" path="%12"/>
+   <linked-el length="31" name="%7" offset="2254" path="%12"/>
+   <linked-el length="18" name="%10" offset="2590" path="%12"/>
+   <linked-el length="23" name="%10" offset="2734" path="%12"/>
+   <linked-el length="43" name="%10" offset="2855" path="%12"/>
+   <linked-el length="13" name="%10" offset="2712" path="%12"/>
+   <linked-el length="27" name="%10" offset="3446" path="%12"/>
+   <linked-el length="45" name="%10" offset="2979" path="%12"/>
+   <linked-el length="52" name="%10" offset="3236" path="%12"/>
+   <linked-el length="46" name="%10" offset="3106" path="%12"/>
+   <linked-el length="51" name="%10" offset="3394" path="%12"/>
+   <linked-el length="20" name="%21" offset="1838" path="%12"/>
+   <linked-el length="20" name="%21" offset="1659" path="%12"/>
+   <linked-el length="43" name="%21" offset="2855" path="%12"/>
+   <linked-el length="27" name="%21" offset="3446" path="%12"/>
+   <linked-el length="45" name="%21" offset="2979" path="%12"/>
+   <linked-el length="52" name="%21" offset="3236" path="%12"/>
+   <linked-el length="46" name="%21" offset="3106" path="%12"/>
+   <linked-el length="51" name="%21" offset="3394" path="%12"/>
+   <linked-el length="26" name="%21" offset="2032" path="%12"/>
+   <linked-el length="37" name="%22" offset="3578" path="%12"/>
+   <linked-el length="51" name="%22" offset="3394" path="%12"/>
+   <linked-el length="18" name="%2" offset="2590" path="%12"/>
+   <linked-el length="23" name="%2" offset="2734" path="%12"/>
+   <linked-el length="13" name="%2" offset="2712" path="%12"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias
+   path="/jee7-web/src/main/webapp/WEB-INF/templates/default.xhtml" value="%17"/>
+  <alias path="request" value="%11"/>
+  <alias path="/jee7-ejb/src/main/java/bca/jee7/util/Resources.java" value="%9"/>
+  <alias path="project.artifactId" value="%13"/>
+  <alias path="project" value="%15"/>
+  <alias path="rootArtifactId" value="%16"/>
+  <alias
+   path="/jee7-ejb/src/main/java/bca/jee7/service/MemberRegistration.java" value="%3"/>
+  <alias path="version" value="%18"/>
+  <alias path="newMember" value="%6"/>
+  <alias path="/jee7-web/src/main/webapp/index.xhtml" value="%12"/>
+  <alias
+   path="/jee7-web/src/main/java/bca/jee7/rest/MemberResourceRESTService.java" value="%1"/>
+  <alias path="version.war" value="%19"/>
+  <alias
+   path="/jee7-ejb/src/main/java/bca/jee7/data/MemberRepository.java" value="%0"/>
+  <alias
+   path="/jee7-web/src/main/java/bca/jee7/controller/MemberController.java" value="%4"/>
+  <alias
+   path="/jee7-ejb/src/test/java/bca/jee7/test/MemberRegistrationTest.java" value="%5"/>
+  <alias path="version.war.plugin" value="%20"/>
+  <alias path="memberController" value="%7"/>
+  <alias path="members" value="%10"/>
+  <alias path="/jee7-ejb/src/main/java/bca/jee7/model/Member.java" value="%21"/>
+  <alias path="request.contextPath" value="%22"/>
+  <alias path="/jee7-web/src/main/java/bca/jee7/util/WebResources.java" value="%8"/>
+  <alias
+   path="/jee7-ejb/src/main/java/bca/jee7/data/MemberListProducer.java" value="%2"/>
+  <alias path="/jee7-web/pom.xml" value="%14"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsf/core">
+   <prefix>f</prefix>
+  </uri>
+  <uri value="http://java.sun.com/jsf/html">
+   <prefix>h</prefix>
+  </uri>
+ </uris>
+</kb-project>

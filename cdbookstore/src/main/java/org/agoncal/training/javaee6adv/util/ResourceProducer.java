@@ -1,0 +1,34 @@
+package org.agoncal.training.javaee6adv.util;
+
+import java.util.logging.Logger;
+
+import javax.enterprise.context.RequestScoped;
+import javax.enterprise.inject.Produces;
+import javax.enterprise.inject.spi.InjectionPoint;
+import javax.faces.context.FacesContext;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
+
+
+
+public class ResourceProducer
+{
+	@PersistenceContext(unitName="cdbookstorePU") 
+	private EntityManager em;
+	
+	@Produces
+	public EntityManager getEntityManager() {
+		return em;
+	}
+	
+	@Produces 
+	public Logger getLogger(InjectionPoint ip) {
+		return Logger.getLogger(ip.getMember().getDeclaringClass().getName());
+	}
+	
+	@Produces
+	@RequestScoped
+	public FacesContext getFacesContext() {
+		return FacesContext.getCurrentInstance();
+	}
+}

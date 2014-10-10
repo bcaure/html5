@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="websocketbackend"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-commons-1.0.0.final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/async-http-servlet-3.0-3.0.8.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/xml/ws/api/main/jboss-jaxws-api_2.2_spec-2.0.2.Final.jar"/>
+  <path value="/home/ben/.m2/repository/com/google/code/gson/gson/2.3/gson-2.3.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.1.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/persistence/api/main/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="/home/ben/.m2/repository/javax/inject/javax.inject/1/javax.inject-1.jar"/>
+  <path value="/home/ben/.m2/repository/org/apache/commons/commons-csv/1.0/commons-csv-1.0.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-client-3.0.8.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-jaxrs-3.0.8.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-multipart-provider/main/resteasy-multipart-provider-3.0.8.Final-jandex.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.8.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/wsdl4j/api/main/wsdl4j-1.6.3.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/resource/api/main/jboss-connector-api_1.7_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/jws/api/main/jsr181-api-1.0-MR1.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/servlet/jstl/api/main/jboss-jstl-api_1.2_spec-1.1.0.Final.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/c-1_0-rt.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/c-1_0.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/c.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/fmt-1_0-rt.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/fmt-1_0.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/fmt.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/fn.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/permittedTaglibs.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/scriptfree.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/sql-1_0-rt.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/sql-1_0.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/sql.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/x-1_0-rt.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/x-1_0.tld" project="websocket"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-jboss-jstl-api_1.2_spec-1.1.0.Final.jar/META-INF/x.tld" project="websocket"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/as/controller-client/main/wildfly-controller-client-8.1.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/interceptor/api/main/jboss-interceptors-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/rmi/api/main/jboss-rmi-api_1.0_spec-1.0.4.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-4.0.21.Beta1.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-multipart-provider/main/resteasy-multipart-provider-3.0.8.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.1.4.GA.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/management/j2ee/api/main/jboss-j2eemgmt-api_1.1_spec-1.0.1.Final.jar"/>
+  <path value="/home/ben/.m2/repository/javax/json/javax.json-api/1.0/javax.json-api-1.0.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.1.0.jar"/>
+  <path value="/home/ben/.m2/repository/org/hibernate/javax/persistence/hibernate-jpa-2.1-api/1.0.0.Final/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="/home/ben/.m2/repository/javax/el/el-api/2.2/el-api-2.2.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.8.Final-jandex.jar"/>
+  <path value="/home/ben/.m2/repository/org/jboss/spec/javax/interceptor/jboss-interceptors-api_1.1_spec/1.0.0.Beta1/jboss-interceptors-api_1.1_spec-1.0.0.Beta1.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/security/jacc/api/main/jboss-jacc-api_1.5_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/xml/soap/api/main/jboss-saaj-api_1.3_spec-1.0.3.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/servlet/jsp/api/main/jboss-jsp-api_2.3_spec-1.0.1.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-infinispan-4.0.21.Beta1.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/ws/rs/api/main/jaxrs-api-3.0.8.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/activation/api/main/activation-1.1.1.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/jms/api/main/jboss-jms-api_2.0_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/el/api/main/jboss-el-api_3.0_spec-1.0.3.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/validation/api/main/validation-api-1.1.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/hibernate/validator/main/hibernate-validator-5.1.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/xml/rpc/api/main/jboss-jaxrpc-api_1.1_spec-1.0.1.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/security/auth/message/api/main/jboss-jaspi-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/mail/api/main/javax.mail-1.5.1.jar"/>
+  <path value="/home/ben/.m2/repository/javax/enterprise/cdi-api/1.1/cdi-api-1.1.jar"/>
+  <path value="/home/ben/.m2/repository/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/inject/api/main/javax.inject-1.jar"/>
+  <path value="/home/ben/.m2/repository/org/jboss/spec/javax/websocket/jboss-websocket-api_1.0_spec/1.0.0.Final/jboss-websocket-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/transaction/api/main/jboss-transaction-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/org/jboss/dmr/main/jboss-dmr-1.2.0.Final.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/faces/api/main/jboss-jsf-api_2.2_spec-2.2.6.jar"/>
+  <path value="/usr/share/wildfly-8.1.0.Final/modules/system/layers/base/javax/xml/bind/api/main/jboss-jaxb-api_2.2_spec-1.0.4.Final.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jsf-verification"/>
+  <core validator-id="jboss.cdi.core">
+   <linked-resource name="%1;" path="%0"/>
+   <linked-resource declaration="true" name="%3;" path="%2"/>
+   <linked-resource name="%1;%0;" path="%4"/>
+   <linked-resource name="%6;%7;%1;%2;%8;%9;" path="%5"/>
+  </core>
+  <core validator-id="jboss.jsf.core"/>
+  <el>
+   <linked-el length="31" name="%10" offset="5036" path="%11"/>
+   <linked-el length="31" name="%10" offset="5664" path="%11"/>
+   <linked-el length="20" name="%12" offset="2019" path="%13"/>
+   <linked-el length="20" name="%12" offset="2289" path="%13"/>
+   <linked-el length="26" name="%14" offset="4135" path="%13"/>
+   <linked-el length="24" name="%15" offset="4232" path="%13"/>
+   <linked-el length="24" name="%16" offset="4294" path="%13"/>
+   <linked-el length="24" name="%16" offset="4232" path="%13"/>
+   <linked-el length="21" name="%17" offset="3257" path="%11"/>
+   <linked-el length="21" name="%18" offset="3101" path="%11"/>
+   <linked-el length="21" name="%18" offset="3505" path="%13"/>
+   <linked-el length="21" name="%19" offset="3101" path="%11"/>
+   <linked-el length="21" name="%19" offset="3505" path="%13"/>
+   <linked-el length="31" name="%20" offset="5036" path="%11"/>
+   <linked-el length="20" name="%20" offset="2019" path="%13"/>
+   <linked-el length="26" name="%20" offset="4173" path="%11"/>
+   <linked-el length="20" name="%20" offset="2289" path="%13"/>
+   <linked-el length="31" name="%20" offset="4881" path="%13"/>
+   <linked-el length="21" name="%20" offset="3648" path="%13"/>
+   <linked-el length="21" name="%20" offset="3257" path="%11"/>
+   <linked-el length="31" name="%20" offset="5664" path="%11"/>
+   <linked-el length="26" name="%20" offset="4135" path="%13"/>
+   <linked-el length="26" name="%21" offset="4135" path="%13"/>
+   <linked-el length="24" name="%22" offset="4294" path="%13"/>
+   <linked-el length="24" name="%22" offset="4232" path="%13"/>
+   <linked-el length="31" name="%23" offset="5036" path="%11"/>
+   <linked-el length="31" name="%23" offset="5664" path="%11"/>
+   <linked-el length="24" name="%24" offset="4294" path="%13"/>
+   <linked-el length="31" name="%25" offset="4881" path="%13"/>
+   <linked-el length="31" name="%26" offset="4881" path="%13"/>
+   <linked-el length="21" name="%27" offset="3648" path="%13"/>
+   <linked-el length="31" name="%28" offset="4881" path="%13"/>
+   <linked-el length="26" name="%29" offset="4173" path="%11"/>
+   <linked-el length="20" name="%30" offset="2019" path="%13"/>
+   <linked-el length="20" name="%30" offset="2289" path="%13"/>
+   <linked-el length="21" name="%31" offset="3648" path="%13"/>
+   <linked-el length="26" name="%32" offset="4173" path="%11"/>
+   <linked-el length="21" name="%33" offset="3257" path="%11"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="loadContactEndpoint" value="%3"/>
+  <alias path="version.arquillian" value="%10"/>
+  <alias path="/websocketbackend/pom.xml" value="%11"/>
+  <alias path="version.ejb" value="%17"/>
+  <alias path="project" value="%19"/>
+  <alias path="version.compiler.plugin" value="%21"/>
+  <alias path="/websocket/src/bca/websocket/ContactEncoder.java" value="%6"/>
+  <alias path="version.arquillian.container" value="%23"/>
+  <alias path="version.war" value="%27"/>
+  <alias path="version.surefire" value="%29"/>
+  <alias path="/websocket/src/bca/Config.java" value="%0"/>
+  <alias path="/websocket/src/bca/log/LogInterceptor.java" value="%9"/>
+  <alias path="version.ejb.plugin" value="%33"/>
+  <alias path="/websocket/src/bca/websocket/PushContactEndpoint.java" value="%7"/>
+  <alias path="version.jboss.bom" value="%12"/>
+  <alias path="version.compiler" value="%14"/>
+  <alias path="maven.compiler.source" value="%15"/>
+  <alias path="maven" value="%16"/>
+  <alias path="/websocket/src/bca/websocket/LoadContactEndpoint.java" value="%2"/>
+  <alias path="project.artifactId" value="%18"/>
+  <alias path="/websocket/src/bca/log/Logged.java" value="%5"/>
+  <alias path="version" value="%20"/>
+  <alias path="maven.compiler" value="%22"/>
+  <alias path="/websocket/pom.xml" value="%13"/>
+  <alias path="maven.compiler.target" value="%24"/>
+  <alias path="version.wildfly.maven.plugin" value="%25"/>
+  <alias path="version.wildfly.maven" value="%26"/>
+  <alias path="version.wildfly" value="%28"/>
+  <alias path="/websocket/src/bca/websocket/ImportContactEndpoint.java" value="%1"/>
+  <alias path="version.jboss" value="%30"/>
+  <alias path="version.war.plugin" value="%31"/>
+  <alias path="version.surefire.plugin" value="%32"/>
+  <alias path="/websocket/src/bca/service/FileImport.java" value="%4"/>
+  <alias path="/websocket/src/bca/websocket/ContactListEncoder.java" value="%8"/>
+ </aliases>
+ <includes/>
+ <uris/>
+</kb-project>

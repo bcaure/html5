@@ -1,0 +1,19 @@
+package bca;
+
+import javax.interceptor.AroundInvoke;
+import javax.interceptor.Interceptor;
+import javax.interceptor.InvocationContext;
+
+@Interceptor
+public class LogInterceptor {
+
+	public LogInterceptor() {
+		// TODO Auto-generated constructor stub
+	}
+
+	@AroundInvoke
+	public Object aroundInvoke(InvocationContext ic) throws Exception {
+		return null;
+	}
+
+}
