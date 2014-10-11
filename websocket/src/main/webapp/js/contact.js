@@ -82,26 +82,10 @@ function add(button) {
 	  document.getElementById('form').style.display='none';
 }
 
-var worker = new Worker('js/downloader.js');
-var websocketImport = null;
-worker.onmessage = function(e) {
-  var files = e.data;
-  var buffers = [];
 
-  // Read each file synchronously as an ArrayBuffer and
-  // stash it in a global array to return to the main app.
-  [].forEach.call(files, function(file) {
-    var reader = new FileReaderSync();
-    console.log(reader.readAsArrayBuffer(file));
-//    buffers.push(reader.readAsArrayBuffer(file));
-  });
-
-  console.log("Send contacts "+e.data);  
+//  console.log("Send contacts "+e.data);  
 //  websocketImport.send(e.data);
-};
-worker.onerror = function(e) {
-  console.log('ERROR: Line '+ e.lineno, ' in '+ e.filename, ': '+ e.message);
-};
+
 
 function importContact(input) {
   
@@ -129,17 +113,17 @@ function importContact(input) {
     worker.postMessage(files);
   }); 
   
-  websocketImport = new WebSocket(url+'/import-contact');
-  websocketImport.onopen = function (ev) {
-    websocketImport.onmessage = function(event) {
-      console.log("Receive file import result");
-      result = JSON.parse(event.data);
-      result.forEach(function(contact) {
-        model.contacts.push(contact);
-      });
-    };
-    worker.postMessage(input.files);
-  };  
+//  websocketImport = new WebSocket(url+'/import-contact');
+//  websocketImport.onopen = function (ev) {
+//    websocketImport.onmessage = function(event) {
+//      console.log("Receive file import result");
+//      result = JSON.parse(event.data);
+//      result.forEach(function(contact) {
+//        model.contacts.push(contact);
+//      });
+//    };
+//    worker.postMessage(input.files);
+//  };  
 }
 
 function loadInlineWorker(selector, callback) {
