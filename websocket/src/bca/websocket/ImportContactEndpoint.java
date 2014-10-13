@@ -5,18 +5,14 @@ import java.io.StringReader;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Collections;
-import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
-import java.util.Map;
 import java.util.Set;
-import java.util.logging.Logger;
 
-import javax.inject.Inject;
+import javax.ejb.Stateless;
 import javax.naming.NamingException;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
-import javax.transaction.Transactional;
 import javax.websocket.EncodeException;
 import javax.websocket.OnMessage;
 import javax.websocket.Session;
@@ -29,21 +25,16 @@ import org.apache.commons.csv.CSVRecord;
 import bca.log.Logged;
 import bca.model.Contact;
 import bca.model.ContactId;
-import bca.service.FileImport;
 
 @ServerEndpoint(
         value = "/import-contact",
         encoders = { ContactListEncoder.class }
 )
-@Transactional
+@Stateless
 @Logged
 public class ImportContactEndpoint{
 	
-	private static final Logger LOGGER = Logger.getLogger(ImportContactEndpoint.class.getName());
 	private static final Set<Session> SESSIONS = Collections.synchronizedSet(new HashSet<Session>());
-	
-	@Inject @FileImport 
-	String filePath;
 
 	@PersistenceContext(unitName="websocketbackend")
     private EntityManager em;
@@ -51,49 +42,38 @@ public class ImportContactEndpoint{
     @OnMessage 
     public void handleMessage(final Session session, String s) throws IOException, EncodeException, NamingException{
     	SESSIONS.add(session);
-    	
-    	LOGGER.info("File received ");
-    	LOGGER.info(s.substring(0, s.length()>100?100:s.length()));
+
     	Collection<Contact> contacts = importCsv(s);	    	
     	
     	session.getBasicRemote().sendObject(contacts);
-    	
-    	LOGGER.info("End");
-  	
     }
     
 	public Collection<Contact> importCsv(String fileContent) throws IOException {
-		Map<ContactId, Contact> contacts = new HashMap<>();
-		try (Reader in = new StringReader(fileContent); CSVParser parser = new CSVParser(in, CSVFormat.DEFAULT.withHeader())) {
+		
+		List<Contact> contacts = new ArrayList<>();
+		
+		try (Reader in = new StringReader(fileContent); CSVParser parser = new CSVParser(in, CSVFormat.DEFAULT)) {
 		
 			List<CSVRecord> records = parser.getRecords();
 			
 			for (CSVRecord record:records) {
 				ContactId contactId = getContactId(record);
-				Contact contact = contacts.get(contactId);
+				Contact contact = em.find(Contact.class, contactId);
 				if (contact == null) {
 					contact = new Contact(contactId);
-					contacts.put(contactId, contact);
+					em.persist(contact);
 				} 
-				contact.setField(record.get("value"));
+				contact.setField(record.get(2));
 				em.merge(contact);
-				
+				contacts.add(contact);
 			}
 
 		}
-		return contacts.values();
-	}
-	
-	public static <E> List<E> makeCollection(Iterable<E> iter) {
-	    List<E> list = new ArrayList<E>();
-	    for (E item : iter) {
-	        list.add(item);
-	    }
-	    return list;
+		return contacts;
 	}
 	
 	protected ContactId getContactId(CSVRecord record) {
-		return new ContactId(record.get("First"), record.get("Last"));
+		return new ContactId(record.get(0), record.get(1));
 	}
     
 }

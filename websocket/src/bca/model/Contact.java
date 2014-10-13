@@ -88,9 +88,9 @@ public class Contact {
 				if (num.length() == 9) {
 					field.append(num);
 					field.insert(1, '.');
-					field.insert(3, '.');
-					field.insert(5, '.');
+					field.insert(4, '.');
 					field.insert(7, '.');
+					field.insert(10, '.');
 					field.insert(0, prefixe);
 					if (this.cellNumber==null) {
 						this.setCellNumber(field.toString());

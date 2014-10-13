@@ -1,6 +1,5 @@
 package bca.log;
 
-import java.util.logging.Level;
 import java.util.logging.Logger;
 
 import javax.interceptor.AroundInvoke;
@@ -24,7 +23,7 @@ public class LogInterceptor {
 		try {
 			result = ic.proceed();
 		} catch (Exception e) {
-			LOG.log(Level.SEVERE, "Error intercepted", e);
+			//LOG.log(Level.SEVERE, "Error intercepted", e);
 			throw e;
 		}
 		
