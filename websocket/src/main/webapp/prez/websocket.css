@@ -1,0 +1,20 @@
+.main-title {
+	text-align:right;
+	padding-right:20px;
+	padding-top:5px;
+	padding-bottom:5px;
+	font-size: 1.3em;
+}
+
+article.uk-article h2.uk-article-title {
+	font-size: 1.8em;
+}
+
+article.uk-article * {
+	font-size: 12pt;
+	line-height: 1.4em;
+}
+
+.uk-block {
+	padding:10px;
+}

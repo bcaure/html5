@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/bootstrap.min.css">  
+    <title>Import</title>
+  </head>
+  <body>
+  <template id="main-template"> 
+	    <script src="/websocket/js/jquery-1.11.1.min.js"></script>
+	    <script src="/websocket/js/bootstrap.min.js"></script>
+	    <script src="/websocket/js/crud.js"></script>    
+	    <script src="/websocket/js/import.js"></script>    
+	    
+	    <div id="mainDiv" class="container">
+	    
+	      <div class="page-header"><h1>Import</h1></div>
+	
+	      <div class="row">
+	        <div class="col-lg-2">
+	          <input type="file" id="input" onchange="importContact(this)">
+	        </div>
+	      </div> 
+	
+	      <div class="row"><div class="col-lg-12">&nbsp;</div></div>
+	      <div id="mainContentDiv" class="row">
+	        <template>
+	        <div id="templateDiv" class="contact col-lg-3" onclick="showContact(this)">
+	          <div class="panel panel-info">
+	            <div class="panel-heading clickable">
+	              <h3 class="panel-title"><span class="firstName"></span>&nbsp;<span class="lastName"></span></h3>       
+	            </div>
+	            <div class="panel-body">          
+	              <span class="homeNumber label label-success"></span>
+	              <span class="cellNumber label label-success"></span>
+	              <span class="email label label-info"></span>
+	            </div>
+	          </div>
+	        </div>
+	        </template>
+	      </div>
+	         
+	    </div>
+	
+	  <script>
+	
+	  init();
+	  
+	  </script>
+	  
+	  <style>
+	  	#contactTemplate { display: none;}
+		.clickable { cursor: pointer; }
+		.clickable:hover { background-color:#ccf8ff; }
+	  
+	  </style>
+  </template>
+</html>
+
