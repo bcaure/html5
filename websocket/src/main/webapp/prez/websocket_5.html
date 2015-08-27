@@ -1,0 +1,29 @@
+<html>
+<template>
+	<h2>WebSocket, HTTP2, SPDY, comet, SSE</h2>
+	<h3>Cas d'utilisations</h3>
+	<ul>
+    <li><a href="#modal-usecase-import" data-uk-modal>import fichiers volumineux</a></li>
+		<li>friends' status updates</li>
+		<li>stock tickers</li>
+		<li>news feeds</li>
+		<li>updating a client-side Web SQL Database or IndexedDB object store)</li>
+	</ul>
+   <div id="modal-usecase-import" class="uk-modal">
+     <div class="uk-modal-dialog" style="width:100%">
+       <a class="uk-modal-close  uk-close" href="#"></a>
+       <div id="placeholder-usecase-import"></div>
+     </div>
+   </div>
+  
+  <script>
+  var link = document.querySelector('#import-usecase-import');
+  var template = link.import.querySelector('#main-template');
+  var placeholder = document.querySelector('#placeholder-usecase-import');
+  var clone = document.importNode(template.content, true);
+  placeholder.innerHTML = '';
+  placeholder.appendChild(clone);
+
+  </script>  
+</template>
+</html>
