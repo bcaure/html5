@@ -1,36 +1,73 @@
 <template>
-	<h2>Le support de ces standards</h2>
-	<h3>Etat de l'art</h3>
-		<div class="uk-block uk-block-default" style="position:absolute;width:350px;top:270px;left:350px;border: 1px solid">
-			<h4>Réseau :</h4>
+	<article>
+		<table>
+			<tr><td>
+			<div>
+		<!--		<a href="#div-w3c" data-uk-modal="{center:true}"> -->
+					<h2 class="uk-article-title">WebSocket, SSE</h3>
+		<!--		</a>	-->
+				<h3 class="tm-article-subtitle">Server Sent Events</h3>
 				<ul>
-					<li>SSE: HTTP/1.1 donc supporté par défaut</li>
-					<li>HTTP/2, websocket: pas encore supporté par les firewall/antivirus/proxy</li>
-				</ul>					
-		</div>	
+					<li><span>Réponse asynchrone / Server push</span></li>
+					<li>Déclenche des évènements javascript via l'objet EventSource</li>
+					<li><span>Basé sur une connection HTTP/1.1 persistente</span> (KeepAlive)</li>
+				</ul>
+				<h3 class="tm-article-subtitle">Websocket</h3>
+				<ul>
+					<li><span>Full-duplex</span> : communication dans les 2 sens simultanément</li>
+					<li><span>Upgrage HTTP</span> : passe sur le port 80, handshake HTTP puis switch sur n'importe quel autre langage</li>
+				</ul>
+			</div>
+			</td><td>
+			<div style="position:relative">
+				<canvas id="canvas-w3c" width="600"></canvas>
+				<img id="W3C" src="w3c.png" style="height:25px;position:absolute" />
+				<img id="html5" src="html5.svg" style="height:50px;position:absolute" />
+				<img id="websocketLogo" src="websocket.png" style="height:60px;width:80px;position:absolute;" />
+				<img id="comet" src="comet.png" style="height:50px;position:absolute" />
+				<img id="whatwg" src="WHATWG.png" style="height:50px;position:absolute" />
+				<div id="SSE" style="width:50px;position:absolute;font-family:sans-serif;font-size:11pt;">
+					<span style="font-weight:bold">S</span>erver 
+					<span style="font-weight:bold">S</span>ent 
+					<span style="font-weight:bold">E</span>vents
+				</div>
+			</div>
+			</td></tr>	
+		</table>	
+	</article>
+	
+	<script>
+		// ARROW
+		var arrowY = 20;
+		var arrowX = 110;
+		var arrowW = 300;
+		var arrowH = 70;
 
-		<div class="uk-block uk-block-primary uk-contrast" style="position:absolute;width:350px;top:30px;left:430px">
-			<h4>HTTP/2</h4>
-			<ul>
-				<li>Firefox 36, Chrome 41, IE 11</li>
-				<li>Windows Server 2016, Apache 2.4</li>
-			</ul>
-		</div>
+		// ARROW 2
+		var canvas = document.getElementById("canvas-w3c");
+		var ctx = canvas.getContext("2d"); 
+		drawArrowLeft(ctx, arrowX, arrowY, arrowW, arrowH, 'blue', '#BBEEEE');
+		var w3c = document.querySelector('#W3C');
+		w3c.style.left = arrowX  - 90 + 'px';
+		w3c.style.top = arrowY + 'px';
+		var whatwg = document.querySelector('#whatwg');
+		whatwg.style.left = arrowX  - 90 + 'px';
+		whatwg.style.top = arrowY + 40 + 'px';
+		var html5 = document.querySelector('#html5');
+		html5.style.left = arrowX  -50 + 'px';
+		html5.style.top = arrowY + 15 + 'px';
 
-		<div class="uk-block uk-block-secondary uk-contrast" style="position:absolute;width:350px;top:110px;left:50px">
-			<h4>Server Sent Events</h4>
-			<ul>
-				<li>Firefox 6, Chrome 6, <em>(non supporté par IE ni Edge)</em></li>
-				<li>JEE,.Net,PHP,Grails,Python</li>
-			</ul>
-		</div>
-
-		<div class="uk-block uk-block-muted uk-contrast" style="position:absolute;width:350px;top:150px;right:100px">
-			<h4>WebSocket</h4>
-			<ul>
-				<li>Firefox 36, Chrome 41, IE 11</li>
-				<li>JEE 7, .Net 4.5, PHP, Grails, Python</li>
-			</ul>
-		</div>
+		var comet = document.querySelector('#comet');
+		comet.style.left = arrowX + arrowW / 2 - 40 + 'px';
+		comet.style.top = arrowY + arrowH + 35 + 'px';
+		var websocketLogo = document.querySelector('#websocketLogo');
+		websocketLogo.style.left = arrowX + arrowW / 2 - 80 + 'px';
+		websocketLogo.style.top = arrowY + 10 + 'px';
+		drawArrowUp(ctx, arrowX+arrowX+40, arrowY +arrowH+35, 20, 7, 'blue', 'white');
+		var sse = document.querySelector('#SSE');
+		sse.style.top = arrowY + 10 + 'px';
+		sse.style.left = arrowX + arrowW / 2 - 50 + 55 + 'px';
+	
+	</script>
 
 </template>

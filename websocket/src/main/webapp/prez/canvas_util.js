@@ -31,18 +31,23 @@ function drawArrowUp(ctx, x, y, l, w, lineColour, fillingColour) {
 }
 
 function importUrl(direction) {
-	var placeholder = document.querySelector('#placeholder');
 	var newIndex = indexPage;
 	if (direction == 'prev') newIndex--;
 	else newIndex++;
-	var link = document.querySelector('#import'+newIndex);
+	if (importTemplate('#placeholder', '#import'+newIndex)) {
+		indexPage = newIndex;
+	}
+}
+
+function importTemplate(placeholder, importName) {
+	var placeholder = document.querySelector(placeholder);
+	var link = document.querySelector(importName);
 	if (link != null) {
 		var template = link.import.querySelector('template');
 		var clone = document.importNode(template.content, true);
 		placeholder.innerHTML = '';
 		placeholder.appendChild(clone);
-		indexPage = newIndex;
-	}
-}
-
-	
+		return true;
+	} else 
+        return false;
+}	

@@ -18,3 +18,7 @@ article.uk-article * {
 .uk-block {
 	padding:10px;
 }
+
+.push-img {
+    height: 500px;
+}

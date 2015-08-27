@@ -45,12 +45,35 @@
 		<hr class="uk-width-8-10 uk-article-divider" style="margin-top:10px;margin-bottom:10px;border-color:blue">		
 		<div class="uk-width-1-10"></div>
 		<div class="uk-width-1-10"></div>
-		<div id="placeholder" class="uk-width-8-10 uk-block uk-block-default"></div>        
+		<div id="placeholder" class="uk-width-8-10 uk-block uk-block-default">
+        
+	<article class="uk-article">
+        <div>
+            <a href="#div-ietf" data-uk-modal="{center:true}">
+                <h2 class="uk-article-title">Websocket</h3>
+            </a>
+            <ul>
+                <li>Mieux que les <a href="#modal-usecase-import" data-uk-modal>solutions PUSH existantes</a></li>
+                <li>Différent de HTTP/2</li>
+            </ul>
+        </div>
+	</article>
+
+   <div id="modal-usecase-import" class="uk-modal">
+     <div class="uk-modal-dialog" style="width:100%">
+         <a class="uk-modal-close  uk-close" href="#"></a>
+         <img id="polling" src="polling.svg" class="push-img" onclick="$('.push-img').css('display', 'none');$('#long-polling').css('display', 'block');" />
+         <img id="long-polling" src="long_polling.svg" class="push-img" style="display:none" onclick="$('.push-img').css('display', 'none');$('#server_sent_events').css('display', 'block');" /> 
+         <img id="server_sent_events" src="server_sent_events.svg" class="push-img" style="display:none" onclick="$('.push-img').css('display', 'none');$('#websocket-svg').css('display', 'block');" />                                                          <img id="websocket-svg" src="websocket.svg" class="push-img" style="display:none" onclick="$('.push-img').css('display', 'none');$('#polling').css('display', 'block');" />                                                                                
+     </div>
+   </div>          
+        
+        </div>        
 		<div class="uk-width-1-10"></div>
 	</div>
 	<script>
 	indexPage = 0;
-	importUrl('next');
+	//importUrl('next');
 	</script>
     </body>
 </html>

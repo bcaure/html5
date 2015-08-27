@@ -1,58 +1,22 @@
 <template>
 	<article class="uk-article">
-		<table>
-			<tr><td>
-				<div>
-					<a href="#div-ietf" data-uk-modal="{center:true}">
-						<h2 class="uk-article-title">HTTP/2, SPDY</h3>
-					</a>
-					<p class="uk-article-meta">Optimisation de HTTP/1.1</p>
-					<ul>
-						<li><span>Multiplexage</span> du canal TCP/IP (HTTP 1.1 KeepAlive amélioré) </li>
-						<li><span>Compression</span> native du flux</li>
-						<li><span>Asynchrone</span> : 1 requête HTTP => le serveur peut renvoyer plusieurs fichiers (ex: 1 html, des images, css, js) </li>
-						<li><a href="http://stackoverflow.com/questions/12103628/spdy-as-replacement-for-websockets">Pas de push serveur.</a></li>
-					</ul>
-				</div>
-			</td>
-			<td>
-				<div style="position:relative">
-					<canvas id="canvas-ietf" width="650"></canvas>
-					<img id="IETF" src="IETF.png" style="height:70px;position:absolute" />
-					<img id="speed-mobility" src="Speed_Mobility.png" style="height:50px;position:absolute;" />
-					<div id="http2" style="position:absolute;font-family:sans-serif;padding:4px"><span style="font-weight:bold;font-size:18pt">HTTP/2</span><div style="font-size:8pt;margin-left: 40px;top: 20px">Draft 17</div></div>
-					<img id="spdy" src="spdy.png" style="height:50px;position:absolute" />
-				</div>
-			</td></tr>	
-		</table>	
+        <div>
+            <a href="#div-ietf" data-uk-modal="{center:true}">
+                <h2 class="uk-article-title">Websocket</h3>
+            </a>
+            <ul>
+                <li>Mieux que les <a href="#modal-usecase-import" data-uk-modal>solutions PUSH existantes</a></li>
+                <li>Différent de HTTP/2</li>
+                <li>Frameworks utilisant websocket : <a href="http://wamp.ws/">WAMP</a></li>
+            </ul>
+        </div>
 	</article>
-	<script>
-		var canvas = document.getElementById("canvas-ietf");
-		var ctx = canvas.getContext("2d"); 
 
-		// ARROW
-		var arrowY = 20;
-		var arrowX = 110;
-		var arrowW = 300;
-		var arrowH = 70;
-
-		// ARROW 1
-		drawArrowLeft(ctx, arrowX, arrowY, arrowW, arrowH, 'blue', '#BBEEEE');
-		var ietf = document.querySelector('#IETF');
-		ietf.style.left = arrowX  - 80 + 'px';
-		ietf.style.top = arrowY + 'px';
-
-		var spdy = document.querySelector('#spdy');
-		spdy.style.left = arrowX + arrowW / 2 - 15 + 'px';
-		spdy.style.top = arrowY + arrowH + 20 + 'px';
-		var speedMobility = document.querySelector('#speed-mobility');
-		speedMobility.style.left = arrowX + arrowW / 2 - 105 + 'px';
-		speedMobility.style.top = arrowY + arrowH + 20 + 'px';
-		var http2 = document.querySelector('#http2');
-		http2.style.left = arrowX + arrowW / 2 - 60 + 'px';
-		http2.style.top = arrowY + 10 + 'px';
-		drawArrowUp(ctx, arrowX+arrowX+10, arrowY+arrowH+30, 20, 7, 'blue', 'white');
-	
-	
-	</script>
+   <div id="modal-usecase-import" class="uk-modal">
+     <div class="uk-modal-dialog" style="width:100%">
+       <a class="uk-modal-close  uk-close" href="#"></a>
+       <img src="polling.svg" />
+     </div>
+   </div>    
+    
 </template>
