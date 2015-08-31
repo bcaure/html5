@@ -12,17 +12,17 @@
 		
 		<!-- UI KIT -->
         <link rel="stylesheet" href="getuikit/css/uikit.css" />
-        <script src="getuikit/js/uikit.min.js"></script>
+        <script src="getuikit/js/uikit.js"></script>
 
 		
 		<!-- CUSTOM -->
        <link rel="stylesheet" href="websocket.css" />
  		<script src="canvas_util.js"></script>
 		<link id="import1" rel="import" href="websocket_1.html" />
-		<link id="import2" rel="import" href="websocket_2.html" />		
+		<link id="import-http2" rel="import" href="http2.html" />		
 		<link id="import3" rel="import" href="websocket_3.html" />
 		<link id="import4" rel="import" href="websocket_4.html" />
-    <link id="import-usecase-import" rel="import" href="../import.html" />
+        <!--<link id="import-usecase-import" rel="import" href="../import.html" />-->
 		
     </head>
     <body>
@@ -30,7 +30,7 @@
 		<div class="uk-width-1-1">&nbsp;</div>
 		<div class="uk-width-1-10"></div>
 		<div class="uk-width-8-10 uk-block uk-block-secondary uk-contrast main-title">
-		Nouveaux protocoles : HTTP/2, WebSocket
+		Présentation WebSocket
 		</div>
 		<div class="uk-width-1-10"></div>
 		<div class="uk-width-1-10"></div> 
@@ -47,33 +47,47 @@
 		<div class="uk-width-1-10"></div>
 		<div id="placeholder" class="uk-width-8-10 uk-block uk-block-default">
         
-	<article class="uk-article">
-        <div>
-            <a href="#div-ietf" data-uk-modal="{center:true}">
-                <h2 class="uk-article-title">Websocket</h3>
-            </a>
-            <ul>
-                <li>Mieux que les <a href="#modal-usecase-import" data-uk-modal>solutions PUSH existantes</a></li>
-                <li>Différent de HTTP/2</li>
-            </ul>
-        </div>
-	</article>
+            <article class="uk-article">
+                <div>
+                    <a href="#div-ietf" data-uk-modal="{center:true}">
+                        <h2 class="uk-article-title">Websocket</h3>
+                    </a>
+                    <ul>
+                        <li>Mieux que les <a id="modal-pushserver-button" href="#modal-pushserver" data-uk-modal>solutions PUSH existantes</a></li>
+                        <li>Différent de <a id="modal-http2-button" href="#modal-http2" data-uk-modal>HTTP/2</a></li>
+                        <li>Frameworks utilisant websocket : <a href="http://wamp.ws/">WAMP</a>,<a href="http://socket.io/">socket.io</a>,<a href="http://faye.jcoglan.com/">Faye</a> pour node.js</li>
+                        <li>des articles: <a href="http://blog.fanout.io/2014/06/24/you-might-not-need-a-websocket/">you might not need websocket</a></li>
+                    </ul>
+                </div>
+            </article>
 
-   <div id="modal-usecase-import" class="uk-modal">
+       
+        
+        </div>        
+		<div class="uk-width-1-10"></div>
+	</div>
+        
+   <div id="modal-http2" class="uk-modal">
+     <div class="uk-modal-dialog" style="width:100%">
+         <a class="uk-modal-close uk-close" href="#"></a>
+         <div id="http2-placeholder" />                                                                                
+     </div>
+   </div>          
+            
+            
+   <div id="modal-pushserver" class="uk-modal">
      <div class="uk-modal-dialog" style="width:100%">
          <a class="uk-modal-close  uk-close" href="#"></a>
          <img id="polling" src="polling.svg" class="push-img" onclick="$('.push-img').css('display', 'none');$('#long-polling').css('display', 'block');" />
          <img id="long-polling" src="long_polling.svg" class="push-img" style="display:none" onclick="$('.push-img').css('display', 'none');$('#server_sent_events').css('display', 'block');" /> 
          <img id="server_sent_events" src="server_sent_events.svg" class="push-img" style="display:none" onclick="$('.push-img').css('display', 'none');$('#websocket-svg').css('display', 'block');" />                                                          <img id="websocket-svg" src="websocket.svg" class="push-img" style="display:none" onclick="$('.push-img').css('display', 'none');$('#polling').css('display', 'block');" />                                                                                
      </div>
-   </div>          
+   </div>    
         
-        </div>        
-		<div class="uk-width-1-10"></div>
-	</div>
 	<script>
 	indexPage = 0;
 	//importUrl('next');
+    importTemplate('#http2-placeholder', '#import-http2');
 	</script>
     </body>
 </html>
