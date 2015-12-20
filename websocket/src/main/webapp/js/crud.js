@@ -4,6 +4,19 @@ var model = {
   "contacts": []
 };
 
+function Contact(jsonObj) {
+	if (jsonObj != undefined) {
+		for (key in jsonObj) {
+			this[key] = jsonObj[key];
+		}
+	}
+	this.buildId = function () {
+		return 'contact_'+this.id.firstName+'#'+this.id.lastName;
+	}
+	
+	return this;
+}
+
 /** View */
 function fillContactDiv(contact, contactDiv) {
   fillComponent(contactDiv.getElementsByClassName('firstName')[0], contact.id.firstName);  
@@ -19,10 +32,6 @@ function fillComponent(component, data) {
   if (component.value != undefined) component.value = data; 
 }
 
-function buildId(contact) {
-  return 'contact_'+contact.id.firstName+'#'+contact.id.lastName;
-}
-
 /** CRUD events observer */
 Array.observe(model.contacts, function(changes) {
 
@@ -31,23 +40,26 @@ Array.observe(model.contacts, function(changes) {
     if (change.addedCount > 0) {
       
       // Add object
-      contact = change.object[change.index];
-      templateDiv = document.querySelector('template').content.getElementById('templateDiv')
-      contactDiv = templateDiv.cloneNode(true);
-      contactDiv.id = buildId(contact);
+      var contact = change.object[change.index];
+      var templateDiv = document.querySelector('template').content.getElementById('templateDiv')
+      var contactDiv = templateDiv.cloneNode(true);
+      contactDiv.id = contact.buildId();
+	  contactDiv.querySelector('.removeLink').addEventListener("click", function() { deleteObject(contactDiv.id); });
       fillContactDiv(contact, contactDiv);
-      mainDiv = document.getElementById('mainContentDiv');
+      var mainDiv = document.getElementById('mainContentDiv');
       mainDiv.insertBefore(contactDiv, mainDiv.childNodes[0]);
     
     } else if (change.removed && change.removed.length > 0) {
       
-       // TODO implement Delete object
-      
+      var contact = change.removed[0];
+      var contactDiv = document.getElementById(contact.buildId());
+      contactDiv.parentNode.removeChild(contactDiv);
+		
     } else if (change.type == 'update') {
       
       // Modify object
-      contact = change.object[change.name];
-      contactDiv = document.getElementById(buildId(contact));
+      var contact = change.object[change.name];
+      var contactDiv = document.getElementById(contact.buildId());
       fillContactDiv(contact, contactDiv);
       
     }
@@ -63,9 +75,9 @@ function init() {
   }     
   websocket.onmessage = function(event) {
     console.log("Receive contacts:"+event.data);
-    result = JSON.parse(event.data);
-    result.forEach(function(contact) {
-      model.contacts.push(contact);
+    var result = JSON.parse(event.data);
+    result.forEach(function(jsonObj) {
+      model.contacts.push(new Contact(jsonObj));
     });
   };
 }
@@ -74,25 +86,14 @@ function init() {
 /** Populate form */
 function showContact(e, contactDiv) {
   
-  // Mouse position
-  var posx = 0;
-  var posy = 0;
-  if (!e) var e = window.event;
-  if (e.pageX || e.pageY){
-   posx = e.pageX;
-   posy = e.pageY;
-  }
-  
-  // Populate and display form
-	form = document.querySelector('form');
+  	// Populate and display form
+	var form = document.querySelector('#panelForm');
 	form.style.display='block';
-	form.style.left = (posx-350)+'px';
-	form.style.top = (posy-100)+'px';
 	form.style.position = 'absolute';
 	if (contactDiv != null) {
-		contactToDisplay = null;
+		var contactToDisplay = null;
 		model.contacts.forEach(function(contact) {
-			if (buildId(contact) == contactDiv.id) {
+			if (contact.buildId() == contactDiv.id) {
 				contactToDisplay = contact;
 				return;
 			}
@@ -105,23 +106,23 @@ function showContact(e, contactDiv) {
 function ok() {
   
     // Fill model from inputs if "OK" was clicked
-	  var contact;
+	var contact;
     contact = createObjectFromForm('contactForm');
     contact.id = createObjectFromForm('contactFormId');
 	  
     // Send contact
-    websocket = new WebSocket(url+'/push-contact');
+    var websocket = new WebSocket(url+'/push-contact');
     websocket.onopen = function(event) {
-    	contactstring = JSON.stringify(contact);
+    	var contactstring = JSON.stringify(contact);
     	websocket.send(contactstring);
     	console.log("Send contact : "+contactstring);
     }	    
     // Receive response
     websocket.onmessage = function(event) {
     	console.log("Receive contact : "+event.data);
-    	contact = JSON.parse(event.data);
+		var contact = new Contact(JSON.parse(event.data));
     	for (i = 0; i < model.contacts.length;i++) { // check for modification of existing contact
-    	  if (model.contacts[i].id.firstName == contact.id.firstName && model.contacts[i].id.lastName == contact.id.lastName) {
+    	  if (model.contacts[i].buildId() == contact.buildId()) {
     	    model.contacts[i] = contact; 
     	    contact = null; 
     	    break;
@@ -137,11 +138,11 @@ function ok() {
 function exitForm() {
   // Clear inputs
   document.querySelector('form').reset();
-  document.querySelector('form').style.display='none';
+  document.querySelector('#panelForm').style.display='none';
 }
 
 function createObjectFromForm(inputsName) {
-  result = {};
+  var result = new Contact();
   var inputs = document.querySelectorAll('input[name="'+inputsName+'"]');
   for (var i = 0; i < inputs.length; ++i) {
     var input = inputs[i];
@@ -151,8 +152,15 @@ function createObjectFromForm(inputsName) {
 }
 
 /** Delete contact */
-function deleteObject() {
-  
+function deleteObject(divId) {
+  var i = 0;	
+  for (; i < model.contacts.length; i++) {
+	console.log(model.contacts[i].id);
+	if (model.contacts[i].buildId() == divId) {
+		break;
+	}
+  }
+  model.contacts.splice(i, 1);	
 }
 
 
